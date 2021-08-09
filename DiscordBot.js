@@ -263,7 +263,7 @@ client.on('message', (message) => {
                Requires a keyword and time argument to start.
                e.g. !startgiveaway keyword time
                     !giveaway keyword to join the giveaway.
-            */    
+            */
             let [, keyword, timer] = args; //Array Destructuring
             let participants = [];
             let startError = false;
@@ -287,7 +287,7 @@ client.on('message', (message) => {
                             message.channel.send(`\`${msg.author.username}\` has been added to the giveaway.`)
                         })
 
-                        collector.on('end', collected => {             
+                        collector.on('end', collected => {
                             message.channel.send('The giveaway has ended.');
                             collected.forEach(msg => {
                                 if (!participants.includes(msg.author.id)) {
@@ -309,9 +309,9 @@ client.on('message', (message) => {
             }
         }
 
-    //strawpoll function?
+        //strawpoll function?
 
-    //giphy/other gif database interaction1
+        //giphy/other gif database interaction1
 
         //Shows all the available commands and how to use:
         if (args[0] == prefix + "help") {
@@ -331,10 +331,9 @@ Here are the bot commands:
 
 !startgiveaway (keyword) (time): creates a giveaway with a specified keyword.
 
-!wallpaper [number]: posts either a random wallpaper or specified number wallpaper.
-            \`\`\``)
+!wallpaper [number]: posts either a random wallpaper or specified number wallpaper.\`\`\``)
         }
-}
+    }
 })
 
 client.login(token);
