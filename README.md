@@ -1,6 +1,7 @@
 Small Discord Bot project I did.
 
 Requires a config.json file that contains a prefix and discord token.
+Run the bot using `node Discordbot.js`
 
 Here are the bot commands: 
 !avatar @(user): displays the user's avatar.
