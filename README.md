@@ -1,4 +1,4 @@
-Small Discord Bot project I did.
+Small Discord Bot project to explore interaction with the Discord API
 
 Requires a config.json file that contains a prefix and discord token.
 Run the bot using `node Discordbot.js`
